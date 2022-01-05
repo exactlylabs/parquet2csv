@@ -25,6 +25,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
-        goversion: "https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz"
+        goversion: "https://go.dev/dl/go1.17.5.linux-amd64.tar.gz"
         project_path: "./cmd/parquet2csv"
         binary_name: "parquet2csv"
