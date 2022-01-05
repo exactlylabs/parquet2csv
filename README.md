@@ -1,5 +1,7 @@
 ### Parquet2CSV
 
+Parquet2CSV is a simple tool to convert a Parquet file to a CSV written in Go/ Golang
+
 Usage:
 
     parquet2csv <PATH_TO_PARQUET_FILE>
