@@ -56,7 +56,9 @@ func Parquet2CSV(parquetFilePath string) {
 		row := make([]string, len(names))
 		for i, v := range names {
 			t := schema.RootColumn.Children[i].SchemaElement.Type
-			if t != nil && *t == parquet.Type_BYTE_ARRAY {
+			if data[v] == nil {
+				row[i] = ""
+			} else if t != nil && *t == parquet.Type_BYTE_ARRAY {
 				row[i] = string(data[v].([]byte))
 			} else {
 				row[i] = fmt.Sprint(data[v])
