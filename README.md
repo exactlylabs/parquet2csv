@@ -16,3 +16,5 @@ To install locally:
 
     go install github.com/exactlylabs/parquet2csv/cmd/parquet2csv@latest
 
+or download a pre-built binary from https://github.com/exactlylabs/parquet2csv/releases
+
